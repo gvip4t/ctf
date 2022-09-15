@@ -24,7 +24,7 @@ This challenge provided the flag in the form of X_test.pkl, a set of 288 images 
 
 A training dataset of 648 images is provided in X.pkl with labels provided in y.pkl such that for any X.pkl[i], y.pkl[i] is 0 if X.pkl[i] is a cat and 1 if X.pkl[i] is a dog.
 
-```
+```python
 model = Sequential()
 model.add(Conv2D(32, (3,3), activation='relu', input_shape=(80,80,3))) # Inputs are 80 x 80 RGB images
 model.add(MaxPooling2D((2,2))) # Add Maxpooling layers to reduce dimensionality
