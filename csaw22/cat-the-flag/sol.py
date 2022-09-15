@@ -35,5 +35,7 @@ prediction = ''.join(['0' if i < 0.5 else '1' for i in model.predict(x_test)])
 flag = ''
 for i in range(0, len(prediction), 8):
     flag += chr(int(prediction[i:i+8], 2))
-
 print(flag)
+
+# Save model as h5 file
+model.save('model.h5')
